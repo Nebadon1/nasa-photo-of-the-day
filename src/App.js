@@ -4,6 +4,7 @@ import "./App.css";
 import PictureList from "./components/PictureList.js";
 
 
+
 function App() {
 
   
@@ -32,6 +33,7 @@ function App() {
       </div>
   </div>
   <div className="main-container">
+    
     <PictureList/>
   </div>
     </div>
