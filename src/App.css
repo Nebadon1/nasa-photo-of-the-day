@@ -1,33 +1,96 @@
 .App {
   text-align: center;
+  bckgound{
+
+
+  }
+}
+img.bg {
+  background-image: url("/background.jpg");
+  z-index: -1;
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: 75px;
+  background-color: #727c87;
+  background: linear-gradient(90deg,#727c87 0,#a4a6aa 25%,#b1b2b4 50%,#a4a6aa 75%,#727c87);
+}
+.menu_right{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 50%;
+  /*border: 1px solid salmon;*/
+}
+
+.nasalogo img{
+  width: 75px;
+}
+.site_title{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5em;
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+.menu_left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /*border: 1px solid black;*/
+}
+
+.text_large{
+  color: #fff;
+  font-size: 2.0rem;
+}
+.text_small{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container{
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 30px 50px 50px;
+  width: 40%;
+  margin: 90px auto 0;
+  background: rgba(56,46,42,.15);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container img{
+  width: 60%;
 }
+
+.main-container h1{
+  font-size: 2.7rem;
+  color: #fff;
+}
+.explanation{
+  font-size: 1rem;
+  color: #fff;
+  width: 60%;
+  margin: 0 auto
+};
+
